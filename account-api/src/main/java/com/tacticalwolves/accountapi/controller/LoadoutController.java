@@ -20,11 +20,9 @@ public class LoadoutController {
     @PostMapping("")
     public Loadout addLoadout(@RequestBody Loadout loadout){return service.SaveLoadout(loadout);}
 
-    @RolesAllowed({"ADMIN", "MEMBER"})
     @GetMapping("/{Id}")
     public Loadout findLoadoutById(@PathVariable int Id){return service.GetLoadoutById(Id);}
-
-    @RolesAllowed({"ADMIN", "MEMBER"})
+    
     @GetMapping("")
     public List<Loadout> findAllLoadouts(){return service.GetLoadouts();}
 

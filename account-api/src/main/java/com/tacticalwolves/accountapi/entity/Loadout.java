@@ -13,21 +13,12 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "User")
-public class User {
+@Table(name = "Loadout")
+public class Loadout {
     @Id
     @GeneratedValue
-    private int id;
-    private String Email;
-    private String Name;
-    private String PasswordHash;
-    private String PasswordSalt;
-    private Role Role;
+    private int Id;
+    private int UserName;
+    private int Description;
 }
 
-enum Role{
-    Users,
-    Member,
-    Admin,
-
-}

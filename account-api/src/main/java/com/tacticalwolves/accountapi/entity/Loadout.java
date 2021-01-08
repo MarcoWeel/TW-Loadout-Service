@@ -18,7 +18,9 @@ public class Loadout {
     @Id
     @GeneratedValue
     private int Id;
-    private int UserName;
-    private int Description;
+    private String Name;
+    private String Description;
+    private String FileURL;
+    private int UserId;
 }
 

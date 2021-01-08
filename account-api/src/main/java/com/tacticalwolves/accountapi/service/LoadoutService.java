@@ -20,8 +20,8 @@ public class LoadoutService {
         return repository.findAll();
     }
 
-    public Loadout GetLoadoutById(int Id){
-        return repository.findById(Id).orElse(null);
+    public List<Loadout> GetLoadoutById(String Id){
+        return repository.findByUserId(Id);
     }
 
     public String DeleteLoadoutById(int Id){

@@ -21,7 +21,7 @@ public class LoadoutController {
     public Loadout addLoadout(@RequestBody Loadout loadout){return service.SaveLoadout(loadout);}
 
     @GetMapping("/{Id}")
-    public Loadout findLoadoutById(@PathVariable int Id){return service.GetLoadoutById(Id);}
+    public List<Loadout> findLoadoutByUserId(@PathVariable String Id){return service.GetLoadoutById(Id);}
     
     @GetMapping("")
     public List<Loadout> findAllLoadouts(){return service.GetLoadouts();}

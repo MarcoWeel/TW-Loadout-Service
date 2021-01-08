@@ -21,6 +21,6 @@ public class Loadout {
     private String Name;
     private String Description;
     private String FileURL;
-    private String UserId;
+    private String userId;
 }
 

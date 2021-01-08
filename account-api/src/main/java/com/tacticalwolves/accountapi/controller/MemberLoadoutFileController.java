@@ -19,7 +19,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/loadout")
-@CrossOrigin
+@CrossOrigin("*")
 public class MemberLoadoutFileController {
 
         @Autowired
